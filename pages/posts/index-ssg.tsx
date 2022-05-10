@@ -1,6 +1,11 @@
 import { NextPage } from "next"
 import { getPosts } from 'lib/posts'
 
+type Post = {
+    id: string;
+    date: string;
+    title: string;
+  }
 type postProps = {
     posts: Post[]
 }
